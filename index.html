@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Steganography</title>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+         integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q="
+         crossorigin="anonymous"
+         />
+      <link rel="stylesheet" href="style.css" />
+      <script src="steganography.js"></script>
+   </head>
+   <body>    
+      <div class="cont">                
+        <div class="deconstructed">
+          <h1> Double layer Security involving Steganography </h1>
+        </div>      
+        <div class="main">
+          <div class="encode">
+              <div class="source">
+                <div  class="img1">
+                    <h2>Source Image</h2>
+                    <img id="image1" src="" alt="" />
+                </div>
+                <br>               
+                <div class = "browse">
+                  <input class="ui-primary-button" type="file" name="pic" accept="image/*" onchange="readURL(this);"/>               
+                </div>
+                  <div class="enterbox">                                  
+                    <input id="text" class="textbox" type="text" placeholder="Enter text to hide in image"/>
+                    <br>
+                    <br>
+                    <button class="ui-secondary-button" onclick="hideText()"><h4>Submit</h4></button>
+                  </div>                          
+              </div>
+          </div>
+          <div class = "grid-container">
+              <div class="ui-input">
+                
+                <div class="output">
+                    <div class="encodebox">
+                      <h3>Message Encoded Image</h3>
+                      <img id="image2" src="" alt="" />        
+                      <br>             
+                      <a id="imageurl" href="" onclick="DownloadImage()" download>
+                        <button class="button"><h4>Download</h4></button></a>
+                    </div>
+                </div>
+              </div>
+          </div>
+          <div class="decode">
+              <h2>Decode Text</h2>
+              <img class = "opa" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
+              <h2 id="decoded"></h2>
+              <br>
+              <div class = "browse">
+                <input class="decode-button" type="file" name="pic" accept="image/*" onchange="decode(this);" />
+              </div>
+          </div>
+      </div>     
+      <script src="index.js"></script>
+      <script src="qrcode.js"></script>
+      <script src="script.js"></script>      
+   </body>
+</html>

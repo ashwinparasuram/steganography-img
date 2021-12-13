@@ -1,0 +1,130 @@
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+body {
+  background: linear-gradient(-45deg, #ffd5d5, #effbff, #c5fff1);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.deconstructed {
+  margin-top: 5vh;
+}
+
+h1 {  
+  padding: 1rem;  
+  font-style: italic;
+  font-weight: bolder;
+  font: DyeLine;
+  font-size: 40px;
+  background-color: #68EBF5;
+  color: #011321;
+  border: 2px solid #4b4b4b;
+  border-radius: 10px; 
+  box-shadow: 5px 10px #4b4b4b8e;
+}
+
+.encode{
+  display:inline-block;
+  background-color: #ffcecee7;
+  text-align:center;
+  margin-top: 15vh;  
+  border: 2px solid rgba(88, 88, 88, 0.836);
+  border-radius: 15px;
+  box-shadow: 5px 10px #4b4b4b8e;
+
+}
+.source{
+  padding:20px;
+}
+.img1{
+  min-height:200px;
+}
+.img1 h3{
+  margin-top: 20px;
+}
+
+.grid-container{
+  display:inline-block;
+  padding: 30px;
+}
+
+.browse {
+  padding-left: 15%;
+}
+
+.enterbox{
+  padding:2vh;
+}
+
+.output{
+  background-color: #ffcecee7;
+  height: auto;
+  width: auto;
+  margin-top: 10vh;
+  text-align: center;
+  border: 2px solid rgba(88, 88, 88, 0.836);
+  border-radius: 15px;
+  box-shadow: 5px 10px #4b4b4b8e;
+}
+
+.encodebox{
+  padding:20px;
+}
+
+.decode{
+  display:inline-block;
+  background-color: #ffcecee7;
+  text-align:center;
+  padding:30px;
+  border: 2px solid rgba(88, 88, 88, 0.836);
+  border-radius: 15px;
+  box-shadow: 5px 10px #4b4b4b8e;
+}
+
+.textbox {
+  border: 2px solid rgba(88, 88, 88, 0.836);
+  border-radius: 15px;
+  padding: 2%;
+}
+
+.button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(164, 214, 255);
+  border: 1px solid black;
+  border-radius: 8px;  
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(201, 229, 252);  
+}
+
+.ui-secondary-button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(164, 214, 255);
+  border: 1px solid black;
+  border-radius: 8px;  
+}
+
+.ui-secondary-button:hover {
+  cursor: pointer;
+  background-color: rgb(201, 229, 252);  
+}
