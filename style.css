@@ -54,6 +54,12 @@ h1 {
 .source{
   padding:20px;
 }
+
+.imgdisplay {
+  max-height: 50vh;
+  max-width: 50vh;
+}
+
 .img1{
   min-height:200px;
 }
