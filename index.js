@@ -142,5 +142,5 @@ function SendMail() {
   var subject = ""; // Add your Subject here
   var body = ""; // Add your body here
 
-  window.open('https:\\mail.google.com/mail/u/0/?fs=1&to='+emailid+'&su='+subject+'&body='+body+'&tf=cm','_blank');
+  window.open('https://mail.google.com/mail/u/0/?fs=1&to='+emailid+'&su='+subject+'&body='+body+'&tf=cm','_blank');
 }
