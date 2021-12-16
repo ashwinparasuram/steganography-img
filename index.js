@@ -125,3 +125,16 @@ decryptedMessage = decryptedMessageArr.join("");
 return decryptedMessage;
 };
 
+function sendEmail() {       
+  var emailid = document.querySelector('#enteremail').value; 
+  var params = {
+    to_email: emailid,
+    // link: encodedurl    
+  };
+  emailjs.send("steganography", 'template_c383rxe', params)
+  .then(function(res){
+    console.log('success', res.status);
+  })
+}
+
+
