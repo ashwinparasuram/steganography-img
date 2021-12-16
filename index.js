@@ -125,16 +125,22 @@ decryptedMessage = decryptedMessageArr.join("");
 return decryptedMessage;
 };
 
-function sendEmail() {       
-  var emailid = document.querySelector('#enteremail').value; 
-  var params = {
-    to_email: emailid,
-    // link: encodedurl    
-  };
-  emailjs.send("steganography", 'template_c383rxe', params)
-  .then(function(res){
-    console.log('success', res.status);
-  })
+// function sendEmail() {        
+//   var emailid = document.querySelector('#enteremail').value; 
+//   var params = {
+//     to_email: emailid,
+//     link: encodedurl    
+//   };
+//   emailjs.send("steganography", 'template_c383rxe', params)
+//   .then(function(res){
+//     console.log('success', res.status);
+//   })
+// }
+
+function SendMail() {
+  var emailid = document.querySelector('#enteremail').value;
+  var subject = "" // Add your Subject here
+  var body = "" // Add your body here
+
+  window.open('https:\\mail.google.com/mail/u/0/?fs=1&to='+emailid+'&su='+subject+'&body='+body+'&tf=cm','_blank')
 }
-
-
